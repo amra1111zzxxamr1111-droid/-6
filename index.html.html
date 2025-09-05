@@ -1,0 +1,230 @@
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>No Body — دليل شامل تعليمي</title>
+<style>
+:root{--card:#0b1711;--accent:#00ff88;--muted:#7fb9a1}
+*{box-sizing:border-box;font-family: 'Segoe UI', Tahoma, Arial, sans-serif}
+body{margin:0;background:radial-gradient(circle at 10% 10%,#07121a 0%, #02040a 40%, #000 100%);color:#dfffe8;line-height:1.7}
+.container{max-width:1200px;margin:28px auto;padding:20px}
+.header{display:flex;gap:20px;align-items:center;background:linear-gradient(180deg,#071217,#00110b);padding:18px;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.7)}
+.logo{width:160px;height:160px;border-radius:12px;overflow:hidden;border:1px solid rgba(0,255,136,0.08);flex-shrink:0;background:linear-gradient(135deg,rgba(0,255,136,0.03),rgba(255,255,255,0.01));display:flex;align-items:center;justify-content:center}
+.meta h1{margin:0;font-size:2.2rem;color:var(--accent);letter-spacing:1px}
+.meta p.lead{margin:6px 0;color:var(--muted);max-width:820px}
+.buttons{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);border:1px solid rgba(0,255,136,0.06);color:var(--muted);margin:4px 6px;font-size:13px}
+.main{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+.card{background:linear-gradient(180deg,#061018,#031014);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.02);overflow:auto}
+h2{color:#baffd6;margin:0 0 12px 0}
+h3{color:#9fe5c0;margin-top:10px}
+p,li{color:#cfeee0}
+.code{background:#01120a;padding:12px;border-radius:8px;overflow:auto;color:#a8ffd6;font-family:monospace;font-size:13px}
+.figure{background:linear-gradient(180deg,#021014,#00100d);padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);display:flex;gap:12px;align-items:center}
+.figure img{width:160px;height:100px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+.aside .widget{margin-bottom:14px;padding:12px;background:rgba(255,255,255,0.02);border-radius:8px}
+.footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+.lang-toggle{position:fixed;left:12px;bottom:12px;background:#071217;color:var(--accent);padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.03);cursor:pointer}
+@media(max-width:900px){.main{grid-template-columns:1fr} .header{flex-direction:column;align-items:center} .logo{width:180px;height:180px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="logo"><svg width="140" height="140" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" rx="20" fill="#07120a"/><circle cx="100" cy="70" r="42" fill="#0f7f56"/><rect x="40" y="120" width="120" height="40" rx="10" fill="#0f7f56"/><text x="100" y="135" font-size="14" font-family="Arial" text-anchor="middle" fill="#00110a">NO BODY</text></svg></div>
+    <div class="meta">
+      <h1>No Body — بورتفوليو ودليل تعليمي شامل</h1>
+      <p class="lead">اسمك واضح، دليلك طويل ومليان شروحات بالعربي والإنجليزي البسيط. حطيت هنا شرح عملي وآمن مع أمثلة كود قابلة للتشغيل محليًا.</p>
+      <div class="buttons">
+        <span class="badge">No Body</span><span class="badge">Ethical</span><span class="badge">Learning</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="card" id="content">
+      
+<h2>مقدمة مطوَّلة — لماذا تتعلم البرمجة والأمن السيبراني؟</h2>
+<p>
+البرمجة ليست مجرد كتابة أسطر كود — هي طريقة تفكير. عندما تتعلم البرمجة تتعلّم كيف تفكك المشكلات إلى أجزاء صغيرة، وكيف تبني حلولًا قابلة للتكرار والصيانة.
+في عالم اليوم، الفهم التقني يمنحك حرية أكبر في العمل والتعليم والابتكار. تخصص الأمن السيبراني يضيف بعدًا أخلاقيًا ومهنيًا: القدرة على حماية الأنظمة من الأخطار، وفهم كيفية تصميم أنظمة تتمتع بمستوى أمان عالي.
+</p>
+<p>
+الهدف من هذا الملف هو أن يمنحك خريطة طريق واضحة، شرحًا مبسَّطًا، أمثلة تعليمية قابلة للتشغيل محليًا، وروحًا تحفيزية باسم <strong>No Body</strong> — لأن الاسم يعني القوة الصامتة، والتحرك الذكي خلف الستار.
+</p>
+
+<h2>خريطة التعلم المقترحة (مفصّلة)</h2>
+<p><strong>المرحلة الأولى — الأساسيات (أسابيع 1–8)</strong>: تعلم أساسيات لغة برمجة (مثل Python)، المفاهيم العامة: المتغيرات، الحلقات، الشروط، الدوال، وكيفية استخدام الطرفية (Terminal) لإدارة الملفات.</p>
+<p><strong>المرحلة الثانية — مشاريع صغيرة (أسابيع 9–20)</strong>: اصنع مشاريع عملية صغيرة — صفحة ويب تفاعلية، API بسيط، سكربت للتعامل مع ملفات — ودوّن كل خطأ وتعلم من كل تجربة.</p>
+<p><strong>المرحلة الثالثة — التركيز على الأمن والممارسة الآمنة (أسابيع 21–32)</strong>: تعلّم مبادئ الأمن، كتابة كود آمن، تصميم اختبارات داخل بيئة محلية معزولة، والمشاركة في تحديات قانونية داخل مختبرات تعليمية.</p>
+
+<h2>أساسيات البرمجة (شرح مُفصّل)</h2>
+<p>ابدأ بفهم المتغيرات (Variables): هي أماكن تخزين مؤقتة للقيم. بعد ذلك تعلّم الشروط (if / else) للحكم على شروط، والحلقات (for / while) لتكرار العمل، والدوال (functions) لتجميع منطق قابل لإعادة الاستخدام.</p>
+
+<div class="code">
+<pre># مثال Python: متغيرات وشروط وحلقة
+count = 0
+names = ['Ali', 'Sara', 'NoBody']
+for name in names:
+    if 'No' in name:
+        print(f'Found: {name}')
+    count += 1
+print('Total:', count)
+</pre>
+</div>
+
+<p>هذا المثال يعرّف قائمة ويبحث عن اسم يحتوي على 'No' ويعطي نتيجة. مبادئ بسيطة لكنها أساس لكل شيء أكبر لاحقًا.</p>
+
+<h2>البرمجة الكائنية OOP — شرح واضح</h2>
+<p>الفكرة: تجميع البيانات والوظائف ضمن كائن واحد (Object). هذا يساعد على تنظيم المشاريع الكبيرة.</p>
+<div class="code">
+<pre># مثال Python: كلاس بسيط
+class Service:
+    def __init__(self, name):
+        self.name = name
+    def info(self):
+        return f'Service: {self.name}'
+
+s = Service('NoBodyScanDemo')
+print(s.info())
+</pre>
+</div>
+
+<h2>قواعد البيانات — المفهوم وتطبيق آمن</h2>
+<p>تعلّم الفرق بين قواعد البيانات العلاقية (مثل SQL) وغير العلاقية (NoSQL). الأهم هو كيفية الاتصال بها بأمان وعدم تمرير مدخلات المستخدم مباشرةً في الاستعلامات.</p>
+<div class="code">
+<pre># Python + sqlite3 — مثال آمن باستخدام معاملات parameterized
+import sqlite3
+conn = sqlite3.connect(':memory:')
+cursor = conn.cursor()
+cursor.execute("CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT)")
+username = "nobody"
+cursor.execute("INSERT INTO users (username) VALUES (?)", (username,))
+cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
+print(cursor.fetchall())
+</pre>
+</div>
+
+<h2>الويب — مفاهيم أساسية بدون تفاصيل ضارة</h2>
+<p>تعلم ما معنى طلب HTTP، رأس Request، جسم Body، حالة Status Code، وكيف تُقدّم صفحة ويب. هذه المعرفة تساعدك على فهم كيف تُبنى التطبيقات وكيف يجب حمايتها.</p>
+
+<h2>أمن التطبيقات — مفاهيم الحماية</h2>
+<p>نقدّم وصفًا نظريًا للثغرات الشائعة وطرق الحماية. هدفنا تعليمي ومَنَع الضرر.</p>
+<h3>XSS — نظرة عامة وحماية</h3>
+<p>الـ XSS يحدث عندما تُعرض بيانات مستخدم دون ترميز، مما يسمح بتشغيل نص برمجي في متصفح الضحية. الحماية: ترميز/هروب البيانات عند العرض، فحص المدخلات، وتفعيل سياسات CSP قوية عند النشر.</p>
+
+<h3>SQL Injection — نظرة عامة وحماية</h3>
+<p>يحدث عندما تدخل استعلامات SQL من دون حماية. حماية فعّالة تكون عبر معاملات parameterized، والحد من صلاحيات قواعد البيانات.</p>
+
+<h3>CSRF — نظرة عامة وحماية</h3>
+<p>هجوم يقوم بإيصال طلبات نيابةً عن المستخدم دون علمه. الحماية: رموز CSRF في النماذج، وفحص Origin/Referer، واستخدام طرق تحقق إضافية في العمليات الحساسة.</p>
+
+<h2>ممارسات التطوير الآمن — خطوات بسيطة</h2>
+<ul>
+<li>استخدم التحقق من المدخلات دائماً (Validate & Sanitize).</li>
+<li>لا تعرض معلومات داخلية في رسائل الخطأ (وحدّث سجلاتك محليًا فقط).</li>
+<li>ادعم التشفير للقنوات عند النشر (HTTPS).</li>
+<li>حدّ من صلاحيات الحسابات وقواعد البيانات.</li>
+</ul>
+
+<h2>مشروعات تطبيقية (تفصيل لكل مشروع)</h2>
+<p>لكل مشروع أذكر أهدافًا ومخرجات متوقعة:</p>
+<ol>
+<li><strong>صفحة هبوط تفاعلية:</strong> HTML/CSS + JS، نموذج يحفظ البيانات محليًا. هدف: فهم DOM والتفاعل.</li>
+<li><strong>API صغير:</strong> اكتب API محليًا يستقبل بيانات ويعيد JSON. هدف: فهم الطلبات والاستجابات.</li>
+<li><strong>تطبيق مؤمن:</strong> أضف حماية ضد XSS وCSRF، وتأكد من اختبار المدخلات.</li>
+</ol>
+
+<h2>تمارين عملية آمنة</h2>
+<p>كل تمرين ينفَّذ داخل جهازك المحلي أو في بيئة وهمية معزولة. لا تختبر على أنظمة ليست ملكًا لك.</p>
+<div class="code">
+<pre># تمرين مقترح: اصنع صفحة HTML تُظهر رسالة ترحيب وتخزن اسم المستخدم محليًا
+<!doctype html>
+<html>
+  <body>
+    <input id="name" placeholder="اكتب اسمك">
+    <button onclick="save()">احفظ</button>
+    <script>
+      function save(){ localStorage.setItem('name', document.getElementById('name').value); alert('تم الحفظ'); }
+    </script>
+  </body>
+</html>
+</pre>
+</div>
+
+<h2>أخلاقيات وملاحظات مهمة</h2>
+<p>المعرفة تقنية وأساسية — لكنها تتحمل مسؤولية. كل ما تتعلمه لهذا الملف يجب أن يستخدم للدفاع، للتعلم القانوني، أو للمشاريع الخاصة ضمن نطاقك. عدم الالتزام بالقوانين يعرضك لعواقب قانونية، ونحن هنا نحث على السلوك الأخلاقي.</p>
+
+      <h2>رسومات توضيحية مضمّنة</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div class="figure"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNTAwJz48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjMDYxMTE4Jy8+PGcgZmlsbD0nIzAwZmY5OScgZm9udC1mYW1pbHk9J0NvdXJpZXIgTmV3LCBtb25vc3BhY2UnPjx0ZXh0IHg9JzQwJyB5PSc2MCcgZm9udC1zaXplPScyOCc+VGVybWluYWwg4oCUIENvbnNvbGU8L3RleHQ+PHJlY3QgeD0nMzAnIHk9JzkwJyB3aWR0aD0nNzQwJyBoZWlnaHQ9JzMzMCcgcng9JzEyJyBmaWxsPScjMDMxMDE0Jy8+PHRleHQgeD0nNTAnIHk9JzE0MCcgZm9udC1zaXplPScxNic+dXNlckBuby1ib2R5On4kIHB5dGhvbjMgc2NyaXB0LnB5PC90ZXh0Pjx0ZXh0IHg9JzUwJyB5PScxNzAnIGZvbnQtc2l6ZT0nMTQnPnByaW50KCJIZWxsbyBObyBCb2R5Iik8L3RleHQ+PHRleHQgeD0nNTAnIHk9JzIwMCcgZm9udC1zaXplPScxNCc+IyBvdXRwdXQgc2FtcGxlPC90ZXh0Pjx0ZXh0IHg9JzUwJyB5PScyMzAnIGZvbnQtc2l6ZT0nMTQnPiZndDsgSGVsbG8gTm8gQm9keTwvdGV4dD48L2c+PC9zdmc+" alt="terminal"><div style="flex:1;margin-left:8px"><strong>Terminal</strong><div style="color:var(--muted);font-size:13px">محاكاة شاشة الطرفية</div></div></div>
+        <div class="figure"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nMzAwJz48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjMDMxMTE2Jy8+PGcgZmlsbD0nIzdmZmZlMicgZm9udC1mYW1pbHk9J0FyaWFsJz48dGV4dCB4PSc0MCcgeT0nNDAnIGZvbnQtc2l6ZT0nMjInPldlYiBGbG93IOKAlCBDbGllbnQg4oaSIFNlcnZlciDihpIgREI8L3RleHQ+PHJlY3QgeD0nNDAnIHk9JzcwJyB3aWR0aD0nMTgwJyBoZWlnaHQ9JzEwMCcgcng9JzEwJyBmaWxsPScjMDIxMjE0Jy8+PHRleHQgeD0nOTAnIHk9JzEzMCcgZm9udC1zaXplPScxNCc+QnJvd3NlcjwvdGV4dD48cmVjdCB4PSczMTAnIHk9JzcwJyB3aWR0aD0nMTgwJyBoZWlnaHQ9JzEwMCcgcng9JzEwJyBmaWxsPScjMDIxMjE0Jy8+PHRleHQgeD0nMzYwJyB5PScxMzAnIGZvbnQtc2l6ZT0nMTQnPlNlcnZlcjwvdGV4dD48cmVjdCB4PSc1ODAnIHk9JzcwJyB3aWR0aD0nMTgwJyBoZWlnaHQ9JzEwMCcgcng9JzEwJyBmaWxsPScjMDIxMjE0Jy8+PHRleHQgeD0nNjQwJyB5PScxMzAnIGZvbnQtc2l6ZT0nMTQnPkRhdGFiYXNlPC90ZXh0PjxwYXRoIGQ9J00yMjAgMTIwIFEyNjAgMTEwIDMxMCAxMjAnIHN0cm9rZT0nIzdmZmZlMicgZmlsbD0nbm9uZScgc3Ryb2tlLXdpZHRoPScyJy8+PHBhdGggZD0nTTQ5MCAxMjAgUTUzMCAxMTAgNTgwIDEyMCcgc3Ryb2tlPScjN2ZmZmUyJyBmaWxsPSdub25lJyBzdHJva2Utd2lkdGg9JzInLz48L2c+PC9zdmc+" alt="flow"><div style="flex:1;margin-left:8px"><strong>Web Flow</strong><div style="color:var(--muted);font-size:13px">تدفق الطلبات</div></div></div>
+        <div class="figure"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4MDAnIGhlaWdodD0nNTAwJz48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjMDUwODBiJy8+PGcgZmlsbD0nIzY3ZmZjYycgZm9udC1mYW1pbHk9J0FyaWFsJz48dGV4dCB4PSc0MCcgeT0nNjAnIGZvbnQtc2l6ZT0nMjgnPlNlY3VyaXR5IOKAlCBEZWZlbnNpdmUgTGF5ZXJzPC90ZXh0PjxyZWN0IHg9JzQwJyB5PScxMDAnIHdpZHRoPScyMjAnIGhlaWdodD0nMTYwJyByeD0nMTInIGZpbGw9JyMwMjInIC8+PHJlY3QgeD0nMjgwJyB5PScxMDAnIHdpZHRoPScyMjAnIGhlaWdodD0nMTYwJyByeD0nMTInIGZpbGw9JyMwMjInIC8+PHJlY3QgeD0nNTIwJyB5PScxMDAnIHdpZHRoPScyMjAnIGhlaWdodD0nMTYwJyByeD0nMTInIGZpbGw9JyMwMjInIC8+PHRleHQgeD0nODAnIHk9JzE1MCcgZm9udC1zaXplPScxNic+TmV0d29yazwvdGV4dD48dGV4dCB4PSczMzAnIHk9JzE1MCcgZm9udC1zaXplPScxNic+QXBwbGljYXRpb248L3RleHQ+PHRleHQgeD0nNTgwJyB5PScxNTAnIGZvbnQtc2l6ZT0nMTYnPkRhdGE8L3RleHQ+PGNpcmNsZSBjeD0nNjMwJyBjeT0nMjgwJyByPScyOCcgZmlsbD0nIzAwZmY5OScvPjx0ZXh0IHg9JzYxMCcgeT0nMjg2JyBmb250LXNpemU9JzEyJyBmaWxsPScjMDAxJz7wn5SSPC90ZXh0PjwvZz48L3N2Zz4=" alt="security"><div style="flex:1;margin-left:8px"><strong>Defense Layers</strong><div style="color:var(--muted);font-size:13px">مستويات الحماية</div></div></div>
+      </div>
+
+      <h2>تمارين عملية مقترحة (آمنة)</h2>
+      <ol>
+        <li>اكتب سكربت لقراءة ملف محلي وتجميع إحصائيات عنه (خطوات داخلية فقط).</li>
+        <li>ابن صفحة HTML + JS تحفظ بيانات صغيرة في LocalStorage ولا ترسل لأي خادم.</li>
+        <li>أنشئ API محلي باستخدام Flask شغّله على جهازك فقط ولا تفتحه للإنترنت.</li>
+      </ol>
+
+    </section>
+
+    <aside class="card aside">
+      <div class="card widget">
+        <h3>مقتطفات سريعة</h3>
+        <div class="code">
+<pre># Python: اتصال آمن بقاعدة بيانات باستخدام معاملات parameterized
+import sqlite3
+conn = sqlite3.connect('example.db')
+c = conn.cursor()
+c.execute("SELECT * FROM users WHERE id = ?", (1,))
+print(c.fetchall())</pre>
+        </div>
+      </div>
+
+      <div class="card widget">
+        <h3>قواعد ذهبية</h3>
+        <ul>
+          <li>تعلم ببطء واستمر. </li>
+          <li>دوّن ملاحظاتك، واصنع README لكل مشروع.</li>
+          <li>ممارسات الأمان تبدأ منذ السطر الأول من الكود.</li>
+        </ul>
+      </div>
+
+      <div class="card widget">
+        <h3>تواصل داخلي</h3>
+        <p style="margin:0">اسم: No Body</p>
+        <p style="margin:0">واتساب: 01107545181</p>
+        <p style="margin:0">قناة: amrshosha1510</p>
+      </div>
+    </aside>
+  </main>
+
+  <div class="footer card">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© No Body — 2025</div>
+      <div style="color:var(--muted)">صفحة تعليمية آمنة — المحتوى مخصص للتعلّم القانوني والأخلاقي فقط.</div>
+    </div>
+  </div>
+</div>
+
+<button class="lang-toggle" onclick="toggleLang()">EN / عربي</button>
+<script>
+function toggleLang(){ 
+  const btn = document.querySelector('.lang-toggle');
+  if(btn.dataset.en=='1'){ 
+    btn.dataset.en='0'; btn.textContent='EN / عربي';
+    // Simple sample, could extend translations later
+    document.querySelector('h1').textContent = 'No Body — بورتفوليو ودليل تعليمي شامل';
+  } else {
+    btn.dataset.en='1'; btn.textContent='AR / عربي';
+    document.querySelector('h1').textContent = 'No Body — بورتفوليو ودليل تعليمي شامل';
+  }
+}
+</script>
+</body>
+</html>
